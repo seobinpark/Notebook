@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000
 // log 
 app.use(morgan('tiny'));
 
-// mongodb connection
+// connect mongodb 
 connectDB();
 
 app.use(bodyparser.urlencoded({ extended : true}))
